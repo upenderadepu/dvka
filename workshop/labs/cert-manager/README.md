@@ -58,7 +58,7 @@
    # check status of the certificate itself
    kubectl get certificates
    # check the tls certificate stored directly on the k8s secret
-   kubectl describe secrets default-tls-certificate-secret describe
+   kubectl describe secrets default-tls-certificate-secret
    # inspect the public and private keys of the generated certificate
    kubectl get secrets default-tls-certificate-secret -o yaml
    ```
